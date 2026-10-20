@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Contact Elegant Yachting Tours to book a tour or ask a question">
+    <meta name="author" content="Meltem Gulsen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/5fc1d509d9.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+
+    <title>Contact | Elegant Yachting Tours</title>
+</head>
+
+<body>
+    <!--This is the navigation section-->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!--This is the contact section-->
+    <main class="contact">
+        <div class="contact-intro">
+            <h1>Get in Touch</h1>
+            <p>Planning a day on the water? Send us a message and our crew will get back to you within 24 hours.</p>
+        </div>
+
+        <div class="contact-layout">
+            <!--Booking form-->
+            <form class="contact-box contact-form" id="contact-form" action="#">
+                <h2>Send us a message</h2>
+
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="fullname">Full name</label>
+                        <input type="text" id="fullname" name="fullname" placeholder="Jane Smith" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="tour">Tour</label>
+                        <select id="tour" name="tour">
+                            <option value="island-hopping">Island Hopping Adventure</option>
+                            <option value="sunset-sail">Sunset Sail Experience</option>
+                            <option value="coastal-cuisine">Coastal Cuisine Cruise</option>
+                            <option value="other">Something else</option>
+                        </select>
+                    </div>
+                    <div class="form-field">
+                        <label for="guests">Guests</label>
+                        <input type="number" id="guests" name="guests" min="1" max="12" value="2">
+                    </div>
+                </div>
+
+                <div class="form-field">
+                    <label for="date">Preferred date</label>
+                    <input type="date" id="date" name="date">
+                </div>
+
+                <div class="form-field">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5"
+                        placeholder="Tell us about your plans..."></textarea>
+                </div>
+
+                <button type="submit" class="tour-button">Send message</button>
+                <p class="form-success" id="form-success" role="status" hidden>Thank you! We will get back to you within 24 hours.</p>
+            </form>
+
+            <!--Contact details-->
+            <aside class="contact-box contact-info">
+                <h2>Contact details</h2>
+
+                <div class="info-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Marina Bay, Pier 7<br>Southampton, SO14 3QN</p>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <p><a href="tel:+442380000000">+44 23 8000 0000</a></p>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p><a href="mailto:hello@elegantyachting.com">hello@elegantyachting.com</a></p>
+                </div>
+                <div class="info-item">
+                    <i class="fa-solid fa-clock"></i>
+                    <p>Mon - Sun: 08:00 - 20:00</p>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!--This is a footer section-->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Elegant Yachting Tours. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <p class="footer-social">
+                <a href="https://www.facebook.com/" aria-label="Facebook" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/" aria-label="Instagram" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/" aria-label="X" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
